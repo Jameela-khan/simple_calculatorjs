@@ -1,0 +1,26 @@
+button{
+    width:100%;
+    background-color: black;
+    font-weight: 600;
+    color:#fff;
+    /* border-radius: 50%; */
+}
+table
+{
+   
+    margin:0 auto;
+}
+
+#Result
+{
+     background-color: black;
+     font-weight: 600;
+     text-align: right;
+    color:#fff;
+
+}
+#Result::placeholder{
+    font-family: 'Digital-7 Italic'!important;
+    color:#fff;
+
+}

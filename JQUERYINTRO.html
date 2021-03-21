@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h1>JQUERY BASICS</h1>
+    <input type="text" placeholder="ENTER NAME">
+    <button>CLICK ME</button>
+    <h2>HELLO <span id="result"></span></h2>
+
+    <script>
+        $("button").click(function()
+        {
+            var username = $("input").val();
+            $("#result").html(username);
+        })
+    </script>
+</body>
+</html>

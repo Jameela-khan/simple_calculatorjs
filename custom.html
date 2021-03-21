@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: absolute;
+            
+        }
+        
+    </style>
+
+<script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <button>CLICK TO ANIMATE</button>
+    <img src="https://media2.giphy.com/media/12MhwQm8toOEp2/source.gif" alt="">
+<script>
+    $("button").click(
+        function()
+        {
+            $("img").animate(
+                {
+                    left:"1200px"
+            
+                },
+                2000
+            );
+            $("img").animate(
+             {
+                 deg : 180
+             },
+             {
+                 duration:1200,
+                 step:function(now)
+                 {
+                        $(this).css({transform: 'rotateY('+now+'deg)'});
+                 }
+             }
+            );
+
+            $("img").animate(
+                {
+                left:"0px"
+                },2000
+            );
+
+        }
+    )
+</script>
+</body>
+</html>
